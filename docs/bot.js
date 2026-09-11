@@ -1,5 +1,5 @@
 // Misma logica que diego_bot/bot.py, para correr en el navegador.
-import { RESPUESTAS } from "./respuestas.js";
+import { RESPUESTAS } from "./respuestas.js?v=__VERSION__";
 
 export const MULETILLA = "ehhhh";
 export const DEMORA_MINIMA = 1000;
