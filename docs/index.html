@@ -3,26 +3,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>diego.bot</title>
+  <title>diego.bot — el Diez que te contesta cualquiera</title>
+  <meta name="description" content="Chatbot de homenaje: te hace esperar, te contesta cualquiera y te mete un ehhhh entre cada palabra." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
   <header>
-    <h1>diego.bot</h1>
-    <p>Escribile lo que quieras. Se toma uno o dos segundos y te contesta cualquiera.</p>
+    <div class="diez" aria-hidden="true">10</div>
+    <div class="titulos">
+      <h1>diego<span class="punto">.</span>bot</h1>
+      <p>Tirale un centro. Se toma uno o dos segundos, la piensa y te contesta cualquiera.</p>
+    </div>
   </header>
 
   <main>
+    <div class="cinta" aria-hidden="true"></div>
     <div id="chat" role="log" aria-live="polite" aria-label="Conversacion"></div>
     <form id="formulario" autocomplete="off">
-      <label class="sr-only" for="entrada" hidden>Tu mensaje</label>
-      <input id="entrada" type="text" placeholder="Escribi algo..." aria-label="Tu mensaje" required />
-      <button id="enviar" type="submit">Enviar</button>
+      <input id="entrada" type="text" placeholder="Tirale algo al Diez..." aria-label="Tu mensaje" required />
+      <button id="enviar" type="submit">Centro</button>
     </form>
   </main>
 
-  <footer>Todo corre en tu navegador, no hay servidor.</footer>
+  <footer>
+    Homenaje de hincha, sin relacion con Diego Armando Maradona ni su familia.
+    Las respuestas son un chiste y salen de una lista fija. Corre entero en tu
+    navegador, no hay servidor.
+  </footer>
 
   <script type="module" src="app.js"></script>
 </body>

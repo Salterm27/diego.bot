@@ -1,5 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#2f6feb"/>
-  <text x="32" y="43" font-family="system-ui, sans-serif" font-size="30" font-weight="700"
-        fill="#fff" text-anchor="middle">eh</text>
+  <defs>
+    <pattern id="tiras" width="16" height="64" patternUnits="userSpaceOnUse">
+      <rect width="8" height="64" fill="#75aadb"/>
+      <rect x="8" width="8" height="64" fill="#ffffff"/>
+    </pattern>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#tiras)"/>
+  <text x="32" y="45" font-family="system-ui, sans-serif" font-size="34" font-weight="800"
+        fill="#0c2337" text-anchor="middle">10</text>
 </svg>

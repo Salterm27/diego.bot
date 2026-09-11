@@ -8,7 +8,7 @@ SALIDAS = {"salir", "chau", "exit", "quit"}
 
 
 def main():
-    print("Diego bot listo. Escribi algo (o 'salir' para cortar).")
+    print("diego.bot listo. Tirale un centro (o \"salir\" para cortar).")
     while True:
         try:
             entrada = input("vos> ")
@@ -17,7 +17,7 @@ def main():
             break
         if entrada.strip().lower() in SALIDAS:
             break
-        print(f"bot> {responder(entrada)}")
+        print(f"D10S> {responder(entrada)}")
     return 0
 
 

@@ -24,7 +24,7 @@ formulario.addEventListener("submit", async (evento) => {
   entrada.disabled = true;
   boton.disabled = true;
 
-  const pensando = agregarBurbuja("ehhhh...", "bot", "pensando");
+  const pensando = agregarBurbuja("ehhhh... pera que la acomodo", "bot", "pensando");
   try {
     const respuesta = await responder(mensaje);
     pensando.remove();
@@ -36,5 +36,5 @@ formulario.addEventListener("submit", async (evento) => {
   }
 });
 
-agregarBurbuja("ehhhh hola ehhhh", "bot");
+agregarBurbuja("ehhhh La ehhhh pelota ehhhh no ehhhh se ehhhh mancha ehhhh", "bot");
 entrada.focus();

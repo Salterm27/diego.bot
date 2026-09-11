@@ -1,8 +1,12 @@
 # diego.bot
 
-Chatbot que ante cualquier mensaje espera entre 1 y 2 segundos y responde con un
-mensaje aleatorio de un listado pre-establecido, agregando `ehhhh` entre cada
-palabra, al principio y al final.
+El Diez que te contesta cualquiera. Ante cualquier mensaje espera entre 1 y 2
+segundos, la piensa, y responde con una frase al azar de un listado fijo,
+metiendo `ehhhh` entre cada palabra, al principio y al final.
+
+> Homenaje de hincha. No tiene relacion con Diego Armando Maradona, su familia
+> ni nadie que lo represente: es un chiste con frases celebres y otras
+> inventadas. Si vas a publicarlo, no lo presentes como si fuera el.
 
 Hay dos frentes con la misma logica: una **interfaz web** (que corre en GitHub
 Pages) y un **chat de consola** en Python.
@@ -12,8 +16,8 @@ Pages) y un **chat de consola** en Python.
 Todo corre en el navegador, no hay backend. Se publica desde la carpeta `docs/`.
 
 ```
-vos> hola
-bot> ehhhh Anda ehhhh a ehhhh laburar ehhhh un ehhhh poco ehhhh
+vos>  que haces diego
+D10S> ehhhh La ehhhh pelota ehhhh no ehhhh se ehhhh mancha ehhhh
 ```
 
 ### Publicar
@@ -50,7 +54,7 @@ Salir con `salir`, `chau`, `exit`, `quit` o Ctrl-C.
 | Archivo | Que hace |
 | --- | --- |
 | `docs/index.html` | Pagina del chat |
-| `docs/estilos.css` | Estilos (responsive, burbujas, modo oscuro) |
+| `docs/estilos.css` | Estilos: cancha, tiras albicelestes, el 10 y el dorado |
 | `docs/app.js` | UI: burbujas, indicador de "pensando", foco y bloqueo del input |
 | `docs/bot.js` | Logica: demora aleatoria, eleccion y `ehhhh`-eado |
 | `docs/respuestas.js` | El listado de respuestas de la web |
