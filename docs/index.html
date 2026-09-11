@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>diego.bot</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>diego.bot</h1>
+    <p>Escribile lo que quieras. Se toma uno o dos segundos y te contesta cualquiera.</p>
+  </header>
+
+  <main>
+    <div id="chat" role="log" aria-live="polite" aria-label="Conversacion"></div>
+    <form id="formulario" autocomplete="off">
+      <label class="sr-only" for="entrada" hidden>Tu mensaje</label>
+      <input id="entrada" type="text" placeholder="Escribi algo..." aria-label="Tu mensaje" required />
+      <button id="enviar" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>Todo corre en tu navegador, no hay servidor.</footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
