@@ -23,6 +23,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+
+      # Estampa el SHA del commit en los assets para que el navegador no
+      # sirva CSS o modulos viejos de su cache despues de un deploy.
+      - name: Versionar assets
+        run: |
+          find docs -type f \\( -name '*.html' -o -name '*.js' \\) \\
+            -exec sed -i "s/__VERSION__/${GITHUB_SHA::8}/g" {} +
+          grep -r __VERSION__ docs && { echo "quedaron placeholders sin reemplazar"; exit 1; } || true
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs

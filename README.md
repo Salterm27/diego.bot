@@ -41,6 +41,14 @@ python3 -m http.server 8000 --directory docs
 
 Hace falta servirlo por HTTP (no `file://`) porque usa modulos ES.
 
+### Cache
+
+Los assets se referencian como `estilos.css?v=__VERSION__`. El workflow
+reemplaza ese placeholder por el SHA del commit antes de publicar, asi que
+cada deploy cambia la URL de los archivos y el navegador no sirve CSS ni
+modulos viejos de su cache. Si editas los `docs/` a mano, dejá el
+placeholder tal cual: se reemplaza solo en el deploy.
+
 ## Consola (Python)
 
 ```bash

@@ -1,4 +1,4 @@
-import { responder } from "./bot.js";
+import { responder } from "./bot.js?v=__VERSION__";
 
 const chat = document.getElementById("chat");
 const formulario = document.getElementById("formulario");
